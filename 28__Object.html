@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+        // How to create a object
+        //how to print the value of an object
+        // adding a constructor
+        // adding function inside a constructor
+
+
+
+        //My details
+        /*var name,age,cgpa,lang;
+        name="Farok Hossain";
+        age=24;
+        cgpa=3.52;
+        lang=["Begali","Hindi","English"];
+        document.write(age+"<br>");
+        document.write(cgpa+"<br>");
+        */
+
+        /*
+        var student1={
+            name:"Farok Hossain",
+            age:24,
+            cgpa:3.52,
+            lang:["Bengali","Hindi","English"]
+        }
+        var student2={
+            name:"Tanimul",
+            age:23,
+            cgpa:3.05,
+            lang:["Bengali","Hindi","English"]
+        }
+        var student3={
+            name:"Gourab",
+            age:22,
+            cgpa:3.02,
+            lang:["Bengali","Hindi","English"]
+        }
+        document.write(student1.name+"<br>");
+        document.write(student1.cgpa+"<br>");
+        document.write(student1.lang+"<br>");
+        document.write(student2.name+"<br>");
+        document.write(student3.name+"<br>");
+        */
+
+        /*
+       function student(name,age,cgpa,lang){
+           this.name=name;
+           this.age=age;
+           this.cgpa=cgpa;
+           this.lang=lang;
+       }
+       var student1= new student("Farok hossain",25,3.52,["Bengali","Hindi","english"]);
+       var student2= new student("Gourab",26,3.02,["Bengali","China","english"]);
+       var student3= new student("Zahid",25,3.12,["Bengali","Arabic","english"]);
+
+       document.write(student1.name+"<br>");
+       document.write(student1.age+"<br>");
+       document.write(student2.name+"<br>");
+       document.write(student2.age+"<br>");
+       document.write(student3.name+"<br>");
+       document.write(student3.age+"<br>");
+
+       */
+
+
+       function student(name,age,cgpa,lang){
+           this.name=name;
+           this.age=age;
+           this.cgpa=cgpa;
+           this.lang=lang;
+
+           this.display = function()
+           {
+            document.write(this.name+"<br>");
+            document.write(this.age+"<br>");
+            document.write(this.cgpa+"<br>");
+            document.write(this.lang+"<br>");
+           }
+       }
+       var student1= new student("Farok hossain",25,3.52,["Bengali","Hindi","english"]);
+       var student2= new student("Gourab",26,3.02,["Bengali","China","english"]);
+       var student3= new student("Zahid",25,3.12,["Bengali","Arabic","english"]);
+       
+       student1.display();
+       student2.display();
+       student3.display();
+    </script>
+</body>
+</html>

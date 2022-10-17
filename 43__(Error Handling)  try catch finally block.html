@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  
+  <style>
+    #banner, #NavLink{
+      width: 100%;
+      height: 200px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    
+    #NavLink{
+      height: 60px;
+    }
+    #mainDiv{
+      width: 100%;
+      height: 300px;
+      display: flex;
+      
+    }
+    
+    #mainContent{
+      width: 50%;
+      
+    }
+    #rightDiv{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+    #slider, #recentPosts{
+      width: 100%;
+      height: 150px;
+    }
+    #mainContent, #slider, #recentPosts{
+      border: 2px solid black;
+    }
+    #footer{
+      width: 100%;
+      height: 60px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <p>banner</p>
+  </div>
+  <div id="NavLink">Navigation Links</div>
+  
+  <div id="mainDiv">
+    <div id="mainContent">Main Content</div>
+    <div id="rightDiv">
+      <div id="slider">Slider</div>
+      <div id="recentPosts">Recent Post</div>
+    </div>
+  </div>
+  
+  <div id="footer">
+    <p>Footer</p>
+  </div>
+</body>
+</html>

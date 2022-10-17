@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <script>
+        function display1(){ console.log("I am display1"); }  // simple function
+        const display2 = () => console.log("I am display 2"); // arrow function
+        display1();
+        display2();
+
+
+        function message1(){ return "I am message1";}
+        const message2 = () => "I am message2"; // arrow function a return dorkar nai jodi return likte hoi tahole obossoi {} use korte hobe
+        console.log(message2());
+        console.log(message1());
+        
+
+        function add1(num1,num2){ return num1+num2;}
+        const add2 = (num1,num2) => num1 + num2; // arrow function a jodi 1ta parameter pass kora hoi ( ex:num1 ) tahole () dorker nai likher
+        console.log(add1(20,30));
+        console.log(add2(25,30));
+
+    </script>
+</body>
+</html>

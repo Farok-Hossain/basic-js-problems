@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        function addNumbers(x ,y , z){
+            return x+y+z;
+        }
+        
+        let numbers = [1,5,8];
+        console.log(addNumbers(...numbers));
+        let numbers1=[2,3,4,...numbers];
+        console.log(numbers1);
+        */
+        /*
+        let numbers2=[4,3,2,9,8];
+        let numbers3=[5,7,1,6];
+       // let numbers4=numbers2.concat(numbers3);  // simple rules
+       let numbers4=[...numbers2,...numbers3];    // spread operator rules
+        console.log(numbers4);
+        */
+        let p1={
+            name:"Md Farok Hossain",
+            age:25
+        }
+        let p2={
+            Nationality: "Bangladeshi",
+            Occupation: "Student",
+        }
+        let p={...p1,...p2}
+        console.log(p);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // startsWith(searcString, position) -> check a string starts with another string
+        // endsWith(searcString, length) -> check a string ends with another string  
+        // includes(searcString, position) -> check if a string contains another string
+        // All these methods are case sensitive
+
+
+        const message = "Today is Wednesday";
+        console.log(message.startsWith('T'));
+        console.log(message.startsWith('To'));
+        console.log(message.endsWith('y'));
+        console.log(message.endsWith('wednesday'));
+        console.log(message.endsWith('Wednesday'));
+        console.log(message.includes('wednesday'));
+        console.log(message.includes('Wednesday'));
+        console.log(message.includes('is'));
+        console.log(message.includes('today'));
+        console.log(message.includes('Today'));
+        </script>
+</body>
+</html>

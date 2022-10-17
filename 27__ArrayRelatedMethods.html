@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayRelatedMethods</title>
+</head>
+<body>
+   <script>
+       var names=["farok"];
+       document.write(names+"<br>");
+       names.push("Hossain","AFS");
+       document.write(names+"<br>");
+       names.pop();
+       document.write(names+"<br>");
+       names.pop();
+       document.write(names+"<br>");
+       names.unshift("Md");
+       names.push("Hossain");
+       document.write(names+"<br>");
+       names.shift();
+       document.write(names+"<br>");
+       names.pop();
+       document.write(names+"<br>");
+       names.unshift("Md");
+       names.push("hossain");
+       document.write(names+"<br>");
+       names.splice(0,2,"afs");
+       document.write(names+"<br>");
+       names.splice(1,2);
+       document.write(names+"<br>");
+       names.unshift("md","farok","hossain");
+       document.write(names+"<br>");
+       var newArray=names.slice(1);
+       document.write(newArray+"<br>");
+       document.write(names+"<br>");
+       var nam=["Shamim","Azad","Farok","Rifat"];
+       var sortedNam=nam.sort();
+       document.write(nam+"<br>");
+       nam.reverse();
+       document.write(nam+"<br>");
+       var numbers=[5,6,1,70,45,23,78,9,4];
+       numbers.sort(function(a,b){
+           return a-b;
+       }
+       )
+       document.write(numbers+"<br>");
+
+       var numbers=[5,6,1,70,45,23,78,9,4];
+       numbers.sort(function(a,b){
+           return b-a;
+       }
+       )
+       document.write(numbers+"<br>");
+   </script>
+</body>
+</html>

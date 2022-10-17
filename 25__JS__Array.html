@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var names = new Array();
+        names[0]="farok";
+        names[1]="Nurnobi";
+        names[2]="Aminor";
+        names[3]="sifat";
+        document.write(names+"<br>");
+        document.write(names[0]+"<br>");
+        document.write("Length="+names.length+"<br>");
+        var names=["Azad","shamim"];
+        names.push("Sakib");
+        //names.pop();
+        document.write(names+"<br>");
+        document.write(names[1]+"<br>");
+        document.write(names[2]+"<br>");
+        document.write(names.length+"<br>");
+        names.pop();
+        document.write(names+"<br>");
+        
+        var FirstName=["Farok "];
+        var LastName=["Hossain ","AFS"];
+        var FullName=FirstName.concat(LastName);
+        document.write(FullName);
+
+        
+        
+        
+    </script>
+</body>
+</html>

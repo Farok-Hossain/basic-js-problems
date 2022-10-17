@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [1,3,47,65,21,22,26,29,30];
+        let firstEvenNumber = numbers.find( x => x%2===0 );
+        //console.log(firstEvenNumber);
+
+        let numbers1 = [1,3,47,65,21,22,26,29,30];
+        const evenNumber = (value) =>{
+            if (value%2===0)
+            return value;
+        }
+        let firstEvenNumber1 = numbers1.find( evenNumber ); // find(callback, value) return the value of the 1st element that pass certain condition
+        let firstEvenIndexNumber1 = numbers1.findIndex( evenNumber ); // findIndex(callback, value) return the index of the 1st element that pass certain condition
+        console.log(firstEvenNumber1);
+        console.log(firstEvenIndexNumber1);
+
+        const students = [
+            {
+                id: 101,
+                cgpa: 3.0
+            },
+            {
+                id: 102,
+                cgpa: 3.3
+            },
+            {
+                id: 103,
+                cgpa: 3.5
+            },
+            {
+                id: 104,
+                cgpa: 3.9
+            },
+            {
+                id: 105,
+                cgpa: 3.8
+            }
+        ]
+        console.log(students.find(x =>x.cgpa>3.7))
+        console.log(students.findIndex(x =>x.cgpa>3.4))
+    </script>
+</body>
+</html>

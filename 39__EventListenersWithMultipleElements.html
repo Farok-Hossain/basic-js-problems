@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>You have not clicked any button</h1>
+    <button class="myButton">button 1</button>
+    <button class="myButton">button 2</button>
+    <button class="myButton">button 3</button>
+    <script>
+
+        // use 3 function in 3 times
+        /*
+        document.querySelectorAll(".myButton")[0].addEventListener("click",function (){
+            var text=this.innerHTML;
+            document.querySelector("h1").innerHTML =text +" is clicked";
+        });
+
+        document.querySelectorAll(".myButton")[1].addEventListener("click",function (){
+            var text=this.innerHTML;
+            document.querySelector("h1").innerHTML =text +" is clicked";
+        });
+
+        document.querySelectorAll(".myButton")[2].addEventListener("click",function (){
+            var text=this.innerHTML;
+            document.querySelector("h1").innerHTML =text +" is clicked";
+        });
+        */
+
+        // length ber kore then for loop use
+
+         var len= document.querySelectorAll(".myButton").length;
+        for(var i=0;i<len;i++) {
+        document.querySelectorAll(".myButton")[i].addEventListener("click",function (){
+            var text=this.innerHTML;
+            document.querySelector("h1").innerHTML =text +" is clicked";
+        });
+        }
+
+         // for loop use
+         
+         /*
+        for(var i=0;i<3;i++) {
+        document.querySelectorAll(".myButton")[i].addEventListener("click",function (){
+            var text=this.innerHTML;
+            document.querySelector("h1").innerHTML =text +" is clicked";
+        });
+        }
+        */
+
+    </script>
+</body>
+</html>

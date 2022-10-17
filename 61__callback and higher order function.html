@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        // synchronous programming
+        const taskOne = () =>{
+            console.log("Task1");  
+        };
+        
+        const taskTwo = () =>{
+            setTimeout(()=>{
+                console.log("Task2 .Data Loading");
+            },4000);  //Anonymous function
+              //setTimeout is Asynchronous function. This rule apply we can function asynchronous. setTimeout receive callback function
+        };                                   // 3000=3 seconds. setTimeout used in webAPI 
+
+        const taskThree = () => console.log("Task3");    // task 1,2,3,4 same rules apply
+
+        const taskFour = () =>{
+            console.log("Task4");  
+        };
+        const taskFive = () =>{
+            console.log("Task5");  
+        };
+        taskOne();
+        taskTwo();
+        taskFour();
+        taskThree();
+        taskFive();
+      
+        */
+
+        /*
+        // callback and higher order function
+        function square (x){
+        console.log(`square of ${x}: ${x*x}`);    
+        }
+
+       // square(9);
+        //const y= square;  // same rules
+       // y(10);
+
+       function higherOrderFunction (num,callback){  // 1ti function arekta function k receive korlo tar argument hisebe ai argument hisebe j function use korlo aita holo callback function
+                                                     // ar j function callback function k receive kore seita holo higherOrderFunction
+       callback(num);
+       }
+       higherOrderFunction(7,square);
+       */
+
+       const taskOne = (callback) =>{
+            console.log("Task1"); 
+            callback(); 
+        };
+        
+        const taskTwo = (callback) =>{
+            setTimeout(() => {
+                console.log("Task2 .Data Loading");
+                callback();  
+            },3000);    
+        };                                   
+
+        const taskThree = (callback) => { 
+            console.log("Task3")
+        callback();
+        };
+
+
+        const taskFour = (callback) =>{
+            console.log("Task4");  
+            callback();
+        };
+        const taskFive = () =>{
+            console.log("Task5");  
+        };
+         
+        /*
+        taskOne(function f1(){                           // normal function use 
+            taskTwo(function f2(){
+            taskThree(function f3(){
+                taskFour(function f4(){
+                    taskFive();
+                });
+              });
+            });
+          });
+          */
+       
+          taskOne(() =>{                    // Anomious function use13 
+            taskTwo(() =>{
+            taskThree(() =>{
+                taskFour(() =>{
+                    taskFive();
+                });
+              });
+            });
+          });
+      
+      
+
+    </script>
+</body>
+</html>

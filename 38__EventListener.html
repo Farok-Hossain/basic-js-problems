@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     .my-style{
+         color: green;
+         font-size : 4rem;
+     }
+    </style>
+</head>
+<body>
+    <h1>Bangladesh</h1>
+    <script>
+
+        //event lestener er maddome akhane mouse in out er maddome kaj kora hocce
+        
+         var myVar=document.querySelector("h1");
+         myVar.addEventListener("mouseover", function(){
+            myVar.classList.add("my-style");
+         });
+
+         myVar.addEventListener("mouseout", function(){
+        myVar.classList.remove("my-style");
+         });
+
+    </script>
+</body>
+</html>

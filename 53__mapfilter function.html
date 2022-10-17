@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach , map, filter</title>
+</head>
+<body>
+    <script>
+        // forEach , map, filter
+
+        var numbers = [2,3,4,5];
+        var squareNumbers = [];
+        numbers.forEach(function(x){
+            squareNumbers.push(x*x);
+        })
+        console.log(squareNumbers);
+
+
+        var numbers2 = [2,3,4,5,6];
+        var squareNumbers = numbers2.map(function(x){
+            return x*x;
+        })
+        console.log(squareNumbers);
+
+        
+        var numbers2 = [20,32,4,17,7,9,25,77,45,3,6,65];
+        numbers2.sort(function(a,b){return a-b});          // sorting numbers
+        console.log(numbers2);
+        var newNumbers = numbers2.filter(function(x){
+            return x>30;
+        })
+        console.log(newNumbers);
+    </script>
+</body>
+</html>

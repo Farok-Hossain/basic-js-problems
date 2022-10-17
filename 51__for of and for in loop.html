@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of and for in loop</title>
+</head>
+<body>
+    <script>
+        const names=["s1" ,"s2", "s3"];
+        for(let nam of names){
+            console.log(nam);
+        }
+
+      const students={
+          Id: 172452543,
+          name: "Md Farok Hossain",
+          cgpa: 3.52
+      }
+      for(let x in students){
+          console.log(x);
+      }
+
+      const students2={
+          Id: 172452543,
+          name: "Md Farok Hossain",
+          cgpa: 3.52
+      }
+      for(let x in students2){
+          console.log(students2[x]);
+      }
+
+      const students3={
+          Id: 172452543,
+          name: "Md Farok Hossain",
+          cgpa: 3.52
+      }
+      for(let x in students3){
+          console.log(`${x} : ${students3[x]}`);
+      }
+      // stydents ,students2 ,students3 are same rules
+
+    </script>
+</body>
+</html>

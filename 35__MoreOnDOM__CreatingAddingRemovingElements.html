@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+  <a href="#">visit youtube</a>
+  <div  id="my-div" style="background-color: aqua;"> 
+   <h1>Hello</h1>
+   <h1>Good Bye</h1>
+  </div>
+  <script>
+      // creating html new elements then it's added...akhane element create hoise last a..appendChild er maddome last a element add kora jai
+
+      var heading3=document.createElement("h1");
+      var text=document.createTextNode("This is heading 3");
+      heading3.appendChild(text);
+      var myDiv=document.getElementById("my-div");
+      myDiv.appendChild(heading3);
+
+      // remove 2nd elements (Good Bye)
+      
+      var heading2=document.getElementsByTagName("h1")[1];
+        myDiv.removeChild(heading2);
+
+      
+      // creating html new elements then it's added...akhane element create hoise first a.. insertBefore er maddome first a element add kora jai
+      var heading0=document.createElement("h1");
+      var text0=document.createTextNode("This is heading 0");
+      heading0.appendChild(text0);
+      var heading1=document.getElementsByTagName("h1")[0];
+      myDiv.insertBefore(heading0,heading1);
+
+  </script>
+</body>
+</html>

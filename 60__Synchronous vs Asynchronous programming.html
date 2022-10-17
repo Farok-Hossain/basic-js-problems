@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // synchronous programming
+        const taskOne = () =>{
+            console.log("Task1");  
+        };
+        const dataLoading = () =>{
+            console.log("Task2 .Data Loading");
+        }
+        const taskTwo = () =>{
+            setTimeout(dataLoading,3000);    //setTimeout is Asynchronous function. This rule apply we can function asynchronous. setTimeout receive callback function
+        };                                   // 3000=3 seconds. setTimeout used in webAPI 
+
+        const taskThree = () => console.log("Task3");    // task 1,2,3,4 same rules apply
+
+        const taskFour = () =>{
+            console.log("Task4");  
+        };
+        const taskFive = () =>{
+            console.log("Task5");  
+        };
+        taskOne();
+        taskTwo();
+        taskFour();
+        taskThree();
+        taskFive();
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student {                                  //create class
+            constructor(id,name){                       //create constructor
+                this.id=id;
+                this.name=name;
+            }
+            set studentName(name){                     // set the name
+                this.name=name;
+            }
+            get studentInfo(){
+                return this.id +" "+this.name;
+            }
+        }
+        let s1 = new student(102,"Farok");            // create object
+        console.log(s1);
+        console.log(s1.id);
+        console.log(s1.name);
+        s1.studentName = "AFS";                       // change the name
+        console.log(s1.name);
+        console.log(s1.studentInfo);
+    </script>
+</body>
+</html>

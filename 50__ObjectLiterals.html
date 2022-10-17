@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+<body>
+    <script>
+        function studentInfo1(name,age){
+            return{
+                name, // or name: name,
+                age   // or age: age
+            }
+        }
+       console.log(studentInfo1("Farok Hossain",25));
+
+       let message = {
+           body : function(){
+               return 'Hi, I am object function'
+           }
+       }
+       console.log(message.body());
+
+       let message2 = {
+           body(){
+               return 'Hi, I am object function2'
+           }
+       }
+       console.log(message2.body());
+
+       let message3 = {
+           'body name'(){
+               return 'Hi, I am object function3'
+           }
+       }
+       console.log(message3['body name']());
+
+       // message, message 2, message 3 all are same rules
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myMessage1()">Click Me</button>
+    <button onclick="myMessage2()">Click Me</button>
+    <button onclick="myMessage4()">Click Me</button>
+    <button onclick="myMessage5()">Click Me</button>
+    <button onclick="myPicture1()">Azad</button>
+    <button onclick="myPicture2()">Farok</button>
+
+    <h1 onclick="myMessage3()">para</h1>
+    <p id="paraId">Para</p>
+    
+    <img id="myImageId" src="#" alt="" height="300" width="300">
+    <script>
+        function myMessage1(){
+            alert("Button 1");
+        }
+        function myMessage2(){
+            alert("Button 2");
+        }
+        function myMessage3(){
+            alert("This is paragraph");
+        }
+        var myVar=document.querySelector("#paraId");
+        function myMessage4(){
+            myVar.innerHTML="You have clicked on button 3"
+        }
+        function myMessage5(){
+            myVar.innerHTML="You have clicked on button 4"
+        }
+        var img=documnet.querySelector("#myImageId");
+        function myPicture1(){
+            img.src="image/azad.jpg";
+        }
+        function myPicture2(){
+            img.src="image/farok.jpg";
+        }
+    </script>
+</body>
+</html>

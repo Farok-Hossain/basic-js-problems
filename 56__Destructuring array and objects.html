@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+        //let [num1, num2, num3, num4, num5] = numbers; // array destructure
+        let [num1, num2, ...z] = numbers; //spate operator use
+        console.log(num2);
+        console.log(z);
+
+        let a=10, b=20;
+        [a,b]=[b,a]; // swapping variables
+        console.log(a);
+        console.log(b);
+
+        // object dectructure
+        const studentInfo1 = {
+            id : 101,
+            name : 'Md Farok Hossain',
+            cgpa : 3.52
+        }
+        console.log(studentInfo1.name);     // simple rules
+        const {id, cgpa} = studentInfo1 // object distructure
+        console.log(id,cgpa);
+        console.log(cgpa);
+
+        // nested distructure
+        const studentInfo2 = {
+            id : 101,
+            name : 'Farok Hossain',
+            cgpa : 3.52,
+            languages :{
+                native : 'Bangla',
+                Begineer: 'English'
+            }
+        }
+        const {name,languages} = studentInfo2
+        console.log(name);
+        console.log(languages);
+        console.log(languages.native);
+
+
+        // distructuring function parameters
+        const studentInfo3 = ({id, name}) => console.log(id,name);  // arrow function use
+        
+        const student ={
+            id : 201,
+            name :'Farok',
+            cgpa : 3.5
+        }
+        studentInfo3(student)
+    </script>
+</body>
+</html>

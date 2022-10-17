@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+
+       var numbers = [10, 20, 30, 40, 50];
+       for(var x=0; x <= numbers.length; x++){  //simple for loop
+           console.log(numbers[x]);
+       }
+
+
+       var numbers1 = [10, 20, 30, 40, 60];
+       numbers1.forEach(myFunction)
+       function myFunction(x){
+           console.log(x);
+       }
+
+       // numbers1, numbers2 are same in forEach function
+
+
+       var numbers2 = [10, 20, 30, 40, 70];
+       numbers2.forEach( function(x)
+      {
+           console.log(x);
+       })
+
+       var numbers = [10, 20, 30, 40, 70];
+       var squareNumbers = [];
+       numbers.forEach(function(a){
+           squareNumbers.push(a*a);
+       })
+       console.log(squareNumbers);
+
+
+
+       var numbers = [10, 20, 30, 40, 70];
+       console.log(numbers);
+       numbers.forEach(function(a,index,arr){
+           arr[index] = a+5;
+       })
+       console.log(numbers);
+    </script>
+</body>
+</html>
